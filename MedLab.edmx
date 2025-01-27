@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище MedLabModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Addresses">
+          <Key>
+            <PropertyRef Name="ID_Address" />
+          </Key>
+          <Property Name="ID_Address" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameAddress" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Analyzis">
+          <Key>
+            <PropertyRef Name="ID_Analyz" />
+          </Key>
+          <Property Name="ID_Analyz" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameAnalyz" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CostAnalyz" Type="int" Nullable="false" />
+          <Property Name="Ogranizhenia" Type="text" Nullable="false" />
+          <Property Name="TimeWork" Type="int" Nullable="false" />
+          <Property Name="TypeAnalyz_ID" Type="int" Nullable="false" />
+          <Property Name="Obrazech_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="ID_Client" />
+          </Key>
+          <Property Name="ID_Client" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameCompany" Type="varchar" MaxLength="50" />
+          <Property Name="EmailClient" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Dolznost_ID" Type="int" />
+          <Property Name="RekvisitOrganisation" Type="varchar" MaxLength="50" />
+          <Property Name="FirstNameC" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="LastNameC" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="PatronymicC" Type="varchar" MaxLength="25" />
+          <Property Name="Date_Born" Type="varchar" MaxLength="10" />
+          <Property Name="PolicyC" Type="varchar" MaxLength="16" />
+          <Property Name="TypeClient_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Dolznosti">
+          <Key>
+            <PropertyRef Name="ID_Dolznost" />
+          </Key>
+          <Property Name="ID_Dolznost" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameDolznost" Type="varchar" MaxLength="25" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Obrazchi">
+          <Key>
+            <PropertyRef Name="ID_Obrazech" />
+          </Key>
+          <Property Name="ID_Obrazech" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameObrazech" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatOrder_ID" Type="int" Nullable="false" />
+          <Property Name="AddressoOrd_ID" Type="int" Nullable="false" />
+          <Property Name="DateCreate" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Worker_ID" Type="int" Nullable="false" />
+          <Property Name="Client_ID" Type="int" Nullable="false" />
+          <Property Name="Analyz_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Payed">
+          <Key>
+            <PropertyRef Name="ID_Pay" />
+          </Key>
+          <Property Name="ID_Pay" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DatePay" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TypePay_ID" Type="int" Nullable="false" />
+          <Property Name="Result_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PayedType">
+          <Key>
+            <PropertyRef Name="ID_TypePay" />
+          </Key>
+          <Property Name="ID_TypePay" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameTypePay" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResultAnalyzies">
+          <Key>
+            <PropertyRef Name="ID_Result" />
+          </Key>
+          <Property Name="ID_Result" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Result" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="DateStart" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="DateEnd" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Order_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleWorker">
+          <Key>
+            <PropertyRef Name="ID_Role" />
+          </Key>
+          <Property Name="ID_Role" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameRole" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StatusOrder">
+          <Key>
+            <PropertyRef Name="ID_StatusOrder" />
+          </Key>
+          <Property Name="ID_StatusOrder" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameStat" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TypeAnalyzies">
+          <Key>
+            <PropertyRef Name="ID_TypeAnalyzies" />
+          </Key>
+          <Property Name="ID_TypeAnalyzies" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameAnalyz" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TypeClient">
+          <Key>
+            <PropertyRef Name="ID_TypeClient" />
+          </Key>
+          <Property Name="ID_TypeClient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameTypeClient" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="ID_Worker" />
+          </Key>
+          <Property Name="ID_Worker" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Role_ID" Type="int" Nullable="false" />
+          <Property Name="Smeni" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="LoginWorker" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PasswordWorker" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="FirstNameW" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="LastNameW" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="PatronymicW" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <Association Name="FK__Analyzis__Obraze__66603565">
+          <End Role="Obrazchi" Type="Self.Obrazchi" Multiplicity="1" />
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Obrazchi">
+              <PropertyRef Name="ID_Obrazech" />
+            </Principal>
+            <Dependent Role="Analyzis">
+              <PropertyRef Name="Obrazech_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Analyzis__TypeAn__656C112C">
+          <End Role="TypeAnalyzies" Type="Self.TypeAnalyzies" Multiplicity="1" />
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeAnalyzies">
+              <PropertyRef Name="ID_TypeAnalyzies" />
+            </Principal>
+            <Dependent Role="Analyzis">
+              <PropertyRef Name="TypeAnalyz_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Clients__Dolznos__6A30C649">
+          <End Role="Dolznosti" Type="Self.Dolznosti" Multiplicity="0..1" />
+          <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dolznosti">
+              <PropertyRef Name="ID_Dolznost" />
+            </Principal>
+            <Dependent Role="Clients">
+              <PropertyRef Name="Dolznost_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Clients__TypeCli__6B24EA82">
+          <End Role="TypeClient" Type="Self.TypeClient" Multiplicity="1" />
+          <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeClient">
+              <PropertyRef Name="ID_TypeClient" />
+            </Principal>
+            <Dependent Role="Clients">
+              <PropertyRef Name="TypeClient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Addresso__6EF57B66">
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Addresses">
+              <PropertyRef Name="ID_Address" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="AddressoOrd_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Analyz_I__71D1E811">
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Analyzis">
+              <PropertyRef Name="ID_Analyz" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Analyz_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Client_I__70DDC3D8">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ID_Client" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Client_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__StatOrde__6E01572D">
+          <End Role="StatusOrder" Type="Self.StatusOrder" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusOrder">
+              <PropertyRef Name="ID_StatusOrder" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="StatOrder_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Worker_I__6FE99F9F">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="ID_Worker" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Worker_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payed__Result_ID__7A672E12">
+          <End Role="ResultAnalyzies" Type="Self.ResultAnalyzies" Multiplicity="1" />
+          <End Role="Payed" Type="Self.Payed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResultAnalyzies">
+              <PropertyRef Name="ID_Result" />
+            </Principal>
+            <Dependent Role="Payed">
+              <PropertyRef Name="Result_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payed__TypePay_I__797309D9">
+          <End Role="PayedType" Type="Self.PayedType" Multiplicity="1" />
+          <End Role="Payed" Type="Self.Payed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PayedType">
+              <PropertyRef Name="ID_TypePay" />
+            </Principal>
+            <Dependent Role="Payed">
+              <PropertyRef Name="TypePay_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ResultAna__Order__75A278F5">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+          <End Role="ResultAnalyzies" Type="Self.ResultAnalyzies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="ID_Order" />
+            </Principal>
+            <Dependent Role="ResultAnalyzies">
+              <PropertyRef Name="Order_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Workers__Role_ID__619B8048">
+          <End Role="RoleWorker" Type="Self.RoleWorker" Multiplicity="1" />
+          <End Role="Workers" Type="Self.Workers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoleWorker">
+              <PropertyRef Name="ID_Role" />
+            </Principal>
+            <Dependent Role="Workers">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище MedLabModelContainer">
+          <EntitySet Name="Addresses" EntityType="Self.Addresses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Analyzis" EntityType="Self.Analyzis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dolznosti" EntityType="Self.Dolznosti" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Obrazchi" EntityType="Self.Obrazchi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Payed" EntityType="Self.Payed" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PayedType" EntityType="Self.PayedType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResultAnalyzies" EntityType="Self.ResultAnalyzies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoleWorker" EntityType="Self.RoleWorker" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StatusOrder" EntityType="Self.StatusOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TypeAnalyzies" EntityType="Self.TypeAnalyzies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TypeClient" EntityType="Self.TypeClient" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Workers" EntityType="Self.Workers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Analyzis__Obraze__66603565" Association="Self.FK__Analyzis__Obraze__66603565">
+            <End Role="Obrazchi" EntitySet="Obrazchi" />
+            <End Role="Analyzis" EntitySet="Analyzis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Analyzis__TypeAn__656C112C" Association="Self.FK__Analyzis__TypeAn__656C112C">
+            <End Role="TypeAnalyzies" EntitySet="TypeAnalyzies" />
+            <End Role="Analyzis" EntitySet="Analyzis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Clients__Dolznos__6A30C649" Association="Self.FK__Clients__Dolznos__6A30C649">
+            <End Role="Dolznosti" EntitySet="Dolznosti" />
+            <End Role="Clients" EntitySet="Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Clients__TypeCli__6B24EA82" Association="Self.FK__Clients__TypeCli__6B24EA82">
+            <End Role="TypeClient" EntitySet="TypeClient" />
+            <End Role="Clients" EntitySet="Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Addresso__6EF57B66" Association="Self.FK__Orders__Addresso__6EF57B66">
+            <End Role="Addresses" EntitySet="Addresses" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Analyz_I__71D1E811" Association="Self.FK__Orders__Analyz_I__71D1E811">
+            <End Role="Analyzis" EntitySet="Analyzis" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Client_I__70DDC3D8" Association="Self.FK__Orders__Client_I__70DDC3D8">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__StatOrde__6E01572D" Association="Self.FK__Orders__StatOrde__6E01572D">
+            <End Role="StatusOrder" EntitySet="StatusOrder" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Worker_I__6FE99F9F" Association="Self.FK__Orders__Worker_I__6FE99F9F">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payed__Result_ID__7A672E12" Association="Self.FK__Payed__Result_ID__7A672E12">
+            <End Role="ResultAnalyzies" EntitySet="ResultAnalyzies" />
+            <End Role="Payed" EntitySet="Payed" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payed__TypePay_I__797309D9" Association="Self.FK__Payed__TypePay_I__797309D9">
+            <End Role="PayedType" EntitySet="PayedType" />
+            <End Role="Payed" EntitySet="Payed" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ResultAna__Order__75A278F5" Association="Self.FK__ResultAna__Order__75A278F5">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="ResultAnalyzies" EntitySet="ResultAnalyzies" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Workers__Role_ID__619B8048" Association="Self.FK__Workers__Role_ID__619B8048">
+            <End Role="RoleWorker" EntitySet="RoleWorker" />
+            <End Role="Workers" EntitySet="Workers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MedLabModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Addresses">
+          <Key>
+            <PropertyRef Name="ID_Address" />
+          </Key>
+          <Property Name="ID_Address" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Addresso__6EF57B66" FromRole="Addresses" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Analyzis">
+          <Key>
+            <PropertyRef Name="ID_Analyz" />
+          </Key>
+          <Property Name="ID_Analyz" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameAnalyz" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CostAnalyz" Type="Int32" Nullable="false" />
+          <Property Name="Ogranizhenia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TimeWork" Type="Int32" Nullable="false" />
+          <Property Name="TypeAnalyz_ID" Type="Int32" Nullable="false" />
+          <Property Name="Obrazech_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Obrazchi" Relationship="Self.FK__Analyzis__Obraze__66603565" FromRole="Analyzis" ToRole="Obrazchi" />
+          <NavigationProperty Name="TypeAnalyzies" Relationship="Self.FK__Analyzis__TypeAn__656C112C" FromRole="Analyzis" ToRole="TypeAnalyzies" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Analyz_I__71D1E811" FromRole="Analyzis" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="ID_Client" />
+          </Key>
+          <Property Name="ID_Client" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmailClient" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dolznost_ID" Type="Int32" />
+          <Property Name="RekvisitOrganisation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FirstNameC" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastNameC" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PatronymicC" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Date_Born" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PolicyC" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="TypeClient_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Dolznosti" Relationship="Self.FK__Clients__Dolznos__6A30C649" FromRole="Clients" ToRole="Dolznosti" />
+          <NavigationProperty Name="TypeClient" Relationship="Self.FK__Clients__TypeCli__6B24EA82" FromRole="Clients" ToRole="TypeClient" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Client_I__70DDC3D8" FromRole="Clients" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Dolznosti">
+          <Key>
+            <PropertyRef Name="ID_Dolznost" />
+          </Key>
+          <Property Name="ID_Dolznost" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameDolznost" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Clients" Relationship="Self.FK__Clients__Dolznos__6A30C649" FromRole="Dolznosti" ToRole="Clients" />
+        </EntityType>
+        <EntityType Name="Obrazchi">
+          <Key>
+            <PropertyRef Name="ID_Obrazech" />
+          </Key>
+          <Property Name="ID_Obrazech" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameObrazech" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Analyzis" Relationship="Self.FK__Analyzis__Obraze__66603565" FromRole="Obrazchi" ToRole="Analyzis" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="ID_Order" />
+          </Key>
+          <Property Name="ID_Order" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StatOrder_ID" Type="Int32" Nullable="false" />
+          <Property Name="AddressoOrd_ID" Type="Int32" Nullable="false" />
+          <Property Name="DateCreate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Worker_ID" Type="Int32" Nullable="false" />
+          <Property Name="Client_ID" Type="Int32" Nullable="false" />
+          <Property Name="Analyz_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Addresses" Relationship="Self.FK__Orders__Addresso__6EF57B66" FromRole="Orders" ToRole="Addresses" />
+          <NavigationProperty Name="Analyzis" Relationship="Self.FK__Orders__Analyz_I__71D1E811" FromRole="Orders" ToRole="Analyzis" />
+          <NavigationProperty Name="Clients" Relationship="Self.FK__Orders__Client_I__70DDC3D8" FromRole="Orders" ToRole="Clients" />
+          <NavigationProperty Name="StatusOrder" Relationship="Self.FK__Orders__StatOrde__6E01572D" FromRole="Orders" ToRole="StatusOrder" />
+          <NavigationProperty Name="Workers" Relationship="Self.FK__Orders__Worker_I__6FE99F9F" FromRole="Orders" ToRole="Workers" />
+          <NavigationProperty Name="ResultAnalyzies" Relationship="Self.FK__ResultAna__Order__75A278F5" FromRole="Orders" ToRole="ResultAnalyzies" />
+        </EntityType>
+        <EntityType Name="Payed">
+          <Key>
+            <PropertyRef Name="ID_Pay" />
+          </Key>
+          <Property Name="ID_Pay" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DatePay" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TypePay_ID" Type="Int32" Nullable="false" />
+          <Property Name="Result_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ResultAnalyzies" Relationship="Self.FK__Payed__Result_ID__7A672E12" FromRole="Payed" ToRole="ResultAnalyzies" />
+          <NavigationProperty Name="PayedType" Relationship="Self.FK__Payed__TypePay_I__797309D9" FromRole="Payed" ToRole="PayedType" />
+        </EntityType>
+        <EntityType Name="PayedType">
+          <Key>
+            <PropertyRef Name="ID_TypePay" />
+          </Key>
+          <Property Name="ID_TypePay" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameTypePay" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Payed" Relationship="Self.FK__Payed__TypePay_I__797309D9" FromRole="PayedType" ToRole="Payed" />
+        </EntityType>
+        <EntityType Name="ResultAnalyzies">
+          <Key>
+            <PropertyRef Name="ID_Result" />
+          </Key>
+          <Property Name="ID_Result" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Result" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateStart" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateEnd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Order_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__ResultAna__Order__75A278F5" FromRole="ResultAnalyzies" ToRole="Orders" />
+          <NavigationProperty Name="Payed" Relationship="Self.FK__Payed__Result_ID__7A672E12" FromRole="ResultAnalyzies" ToRole="Payed" />
+        </EntityType>
+        <EntityType Name="RoleWorker">
+          <Key>
+            <PropertyRef Name="ID_Role" />
+          </Key>
+          <Property Name="ID_Role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameRole" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Workers" Relationship="Self.FK__Workers__Role_ID__619B8048" FromRole="RoleWorker" ToRole="Workers" />
+        </EntityType>
+        <EntityType Name="StatusOrder">
+          <Key>
+            <PropertyRef Name="ID_StatusOrder" />
+          </Key>
+          <Property Name="ID_StatusOrder" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameStat" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__StatOrde__6E01572D" FromRole="StatusOrder" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="TypeAnalyzies">
+          <Key>
+            <PropertyRef Name="ID_TypeAnalyzies" />
+          </Key>
+          <Property Name="ID_TypeAnalyzies" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameAnalyz" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Analyzis" Relationship="Self.FK__Analyzis__TypeAn__656C112C" FromRole="TypeAnalyzies" ToRole="Analyzis" />
+        </EntityType>
+        <EntityType Name="TypeClient">
+          <Key>
+            <PropertyRef Name="ID_TypeClient" />
+          </Key>
+          <Property Name="ID_TypeClient" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameTypeClient" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Clients" Relationship="Self.FK__Clients__TypeCli__6B24EA82" FromRole="TypeClient" ToRole="Clients" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="ID_Worker" />
+          </Key>
+          <Property Name="ID_Worker" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Role_ID" Type="Int32" Nullable="false" />
+          <Property Name="Smeni" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LoginWorker" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PasswordWorker" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstNameW" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastNameW" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PatronymicW" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Worker_I__6FE99F9F" FromRole="Workers" ToRole="Orders" />
+          <NavigationProperty Name="RoleWorker" Relationship="Self.FK__Workers__Role_ID__619B8048" FromRole="Workers" ToRole="RoleWorker" />
+        </EntityType>
+        <Association Name="FK__Orders__Addresso__6EF57B66">
+          <End Role="Addresses" Type="Self.Addresses" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Addresses">
+              <PropertyRef Name="ID_Address" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="AddressoOrd_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Analyzis__Obraze__66603565">
+          <End Role="Obrazchi" Type="Self.Obrazchi" Multiplicity="1" />
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Obrazchi">
+              <PropertyRef Name="ID_Obrazech" />
+            </Principal>
+            <Dependent Role="Analyzis">
+              <PropertyRef Name="Obrazech_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Analyzis__TypeAn__656C112C">
+          <End Role="TypeAnalyzies" Type="Self.TypeAnalyzies" Multiplicity="1" />
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeAnalyzies">
+              <PropertyRef Name="ID_TypeAnalyzies" />
+            </Principal>
+            <Dependent Role="Analyzis">
+              <PropertyRef Name="TypeAnalyz_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Analyz_I__71D1E811">
+          <End Role="Analyzis" Type="Self.Analyzis" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Analyzis">
+              <PropertyRef Name="ID_Analyz" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Analyz_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Clients__Dolznos__6A30C649">
+          <End Role="Dolznosti" Type="Self.Dolznosti" Multiplicity="0..1" />
+          <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dolznosti">
+              <PropertyRef Name="ID_Dolznost" />
+            </Principal>
+            <Dependent Role="Clients">
+              <PropertyRef Name="Dolznost_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Clients__TypeCli__6B24EA82">
+          <End Role="TypeClient" Type="Self.TypeClient" Multiplicity="1" />
+          <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeClient">
+              <PropertyRef Name="ID_TypeClient" />
+            </Principal>
+            <Dependent Role="Clients">
+              <PropertyRef Name="TypeClient_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Client_I__70DDC3D8">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ID_Client" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Client_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__StatOrde__6E01572D">
+          <End Role="StatusOrder" Type="Self.StatusOrder" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StatusOrder">
+              <PropertyRef Name="ID_StatusOrder" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="StatOrder_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__Worker_I__6FE99F9F">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="ID_Worker" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="Worker_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ResultAna__Order__75A278F5">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+          <End Role="ResultAnalyzies" Type="Self.ResultAnalyzies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="ID_Order" />
+            </Principal>
+            <Dependent Role="ResultAnalyzies">
+              <PropertyRef Name="Order_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payed__Result_ID__7A672E12">
+          <End Role="ResultAnalyzies" Type="Self.ResultAnalyzies" Multiplicity="1" />
+          <End Role="Payed" Type="Self.Payed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResultAnalyzies">
+              <PropertyRef Name="ID_Result" />
+            </Principal>
+            <Dependent Role="Payed">
+              <PropertyRef Name="Result_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payed__TypePay_I__797309D9">
+          <End Role="PayedType" Type="Self.PayedType" Multiplicity="1" />
+          <End Role="Payed" Type="Self.Payed" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PayedType">
+              <PropertyRef Name="ID_TypePay" />
+            </Principal>
+            <Dependent Role="Payed">
+              <PropertyRef Name="TypePay_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Workers__Role_ID__619B8048">
+          <End Role="RoleWorker" Type="Self.RoleWorker" Multiplicity="1" />
+          <End Role="Workers" Type="Self.Workers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoleWorker">
+              <PropertyRef Name="ID_Role" />
+            </Principal>
+            <Dependent Role="Workers">
+              <PropertyRef Name="Role_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MedLabEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Addresses" EntityType="Self.Addresses" />
+          <EntitySet Name="Analyzis" EntityType="Self.Analyzis" />
+          <EntitySet Name="Clients" EntityType="Self.Clients" />
+          <EntitySet Name="Dolznosti" EntityType="Self.Dolznosti" />
+          <EntitySet Name="Obrazchi" EntityType="Self.Obrazchi" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" />
+          <EntitySet Name="Payed" EntityType="Self.Payed" />
+          <EntitySet Name="PayedType" EntityType="Self.PayedType" />
+          <EntitySet Name="ResultAnalyzies" EntityType="Self.ResultAnalyzies" />
+          <EntitySet Name="RoleWorker" EntityType="Self.RoleWorker" />
+          <EntitySet Name="StatusOrder" EntityType="Self.StatusOrder" />
+          <EntitySet Name="TypeAnalyzies" EntityType="Self.TypeAnalyzies" />
+          <EntitySet Name="TypeClient" EntityType="Self.TypeClient" />
+          <EntitySet Name="Workers" EntityType="Self.Workers" />
+          <AssociationSet Name="FK__Orders__Addresso__6EF57B66" Association="Self.FK__Orders__Addresso__6EF57B66">
+            <End Role="Addresses" EntitySet="Addresses" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Analyzis__Obraze__66603565" Association="Self.FK__Analyzis__Obraze__66603565">
+            <End Role="Obrazchi" EntitySet="Obrazchi" />
+            <End Role="Analyzis" EntitySet="Analyzis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Analyzis__TypeAn__656C112C" Association="Self.FK__Analyzis__TypeAn__656C112C">
+            <End Role="TypeAnalyzies" EntitySet="TypeAnalyzies" />
+            <End Role="Analyzis" EntitySet="Analyzis" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Analyz_I__71D1E811" Association="Self.FK__Orders__Analyz_I__71D1E811">
+            <End Role="Analyzis" EntitySet="Analyzis" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Clients__Dolznos__6A30C649" Association="Self.FK__Clients__Dolznos__6A30C649">
+            <End Role="Dolznosti" EntitySet="Dolznosti" />
+            <End Role="Clients" EntitySet="Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Clients__TypeCli__6B24EA82" Association="Self.FK__Clients__TypeCli__6B24EA82">
+            <End Role="TypeClient" EntitySet="TypeClient" />
+            <End Role="Clients" EntitySet="Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Client_I__70DDC3D8" Association="Self.FK__Orders__Client_I__70DDC3D8">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__StatOrde__6E01572D" Association="Self.FK__Orders__StatOrde__6E01572D">
+            <End Role="StatusOrder" EntitySet="StatusOrder" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__Worker_I__6FE99F9F" Association="Self.FK__Orders__Worker_I__6FE99F9F">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ResultAna__Order__75A278F5" Association="Self.FK__ResultAna__Order__75A278F5">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="ResultAnalyzies" EntitySet="ResultAnalyzies" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payed__Result_ID__7A672E12" Association="Self.FK__Payed__Result_ID__7A672E12">
+            <End Role="ResultAnalyzies" EntitySet="ResultAnalyzies" />
+            <End Role="Payed" EntitySet="Payed" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payed__TypePay_I__797309D9" Association="Self.FK__Payed__TypePay_I__797309D9">
+            <End Role="PayedType" EntitySet="PayedType" />
+            <End Role="Payed" EntitySet="Payed" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Workers__Role_ID__619B8048" Association="Self.FK__Workers__Role_ID__619B8048">
+            <End Role="RoleWorker" EntitySet="RoleWorker" />
+            <End Role="Workers" EntitySet="Workers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MedLabModelContainer" CdmEntityContainer="MedLabEntities">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="MedLabModel.Addresses">
+              <MappingFragment StoreEntitySet="Addresses">
+                <ScalarProperty Name="ID_Address" ColumnName="ID_Address" />
+                <ScalarProperty Name="NameAddress" ColumnName="NameAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Analyzis">
+            <EntityTypeMapping TypeName="MedLabModel.Analyzis">
+              <MappingFragment StoreEntitySet="Analyzis">
+                <ScalarProperty Name="ID_Analyz" ColumnName="ID_Analyz" />
+                <ScalarProperty Name="NameAnalyz" ColumnName="NameAnalyz" />
+                <ScalarProperty Name="CostAnalyz" ColumnName="CostAnalyz" />
+                <ScalarProperty Name="Ogranizhenia" ColumnName="Ogranizhenia" />
+                <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+                <ScalarProperty Name="TypeAnalyz_ID" ColumnName="TypeAnalyz_ID" />
+                <ScalarProperty Name="Obrazech_ID" ColumnName="Obrazech_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="MedLabModel.Clients">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+                <ScalarProperty Name="NameCompany" ColumnName="NameCompany" />
+                <ScalarProperty Name="EmailClient" ColumnName="EmailClient" />
+                <ScalarProperty Name="Dolznost_ID" ColumnName="Dolznost_ID" />
+                <ScalarProperty Name="RekvisitOrganisation" ColumnName="RekvisitOrganisation" />
+                <ScalarProperty Name="FirstNameC" ColumnName="FirstNameC" />
+                <ScalarProperty Name="LastNameC" ColumnName="LastNameC" />
+                <ScalarProperty Name="PatronymicC" ColumnName="PatronymicC" />
+                <ScalarProperty Name="Date_Born" ColumnName="Date_Born" />
+                <ScalarProperty Name="PolicyC" ColumnName="PolicyC" />
+                <ScalarProperty Name="TypeClient_ID" ColumnName="TypeClient_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dolznosti">
+            <EntityTypeMapping TypeName="MedLabModel.Dolznosti">
+              <MappingFragment StoreEntitySet="Dolznosti">
+                <ScalarProperty Name="ID_Dolznost" ColumnName="ID_Dolznost" />
+                <ScalarProperty Name="NameDolznost" ColumnName="NameDolznost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Obrazchi">
+            <EntityTypeMapping TypeName="MedLabModel.Obrazchi">
+              <MappingFragment StoreEntitySet="Obrazchi">
+                <ScalarProperty Name="ID_Obrazech" ColumnName="ID_Obrazech" />
+                <ScalarProperty Name="NameObrazech" ColumnName="NameObrazech" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="MedLabModel.Orders">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+                <ScalarProperty Name="StatOrder_ID" ColumnName="StatOrder_ID" />
+                <ScalarProperty Name="AddressoOrd_ID" ColumnName="AddressoOrd_ID" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="Worker_ID" ColumnName="Worker_ID" />
+                <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+                <ScalarProperty Name="Analyz_ID" ColumnName="Analyz_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Payed">
+            <EntityTypeMapping TypeName="MedLabModel.Payed">
+              <MappingFragment StoreEntitySet="Payed">
+                <ScalarProperty Name="ID_Pay" ColumnName="ID_Pay" />
+                <ScalarProperty Name="DatePay" ColumnName="DatePay" />
+                <ScalarProperty Name="TypePay_ID" ColumnName="TypePay_ID" />
+                <ScalarProperty Name="Result_ID" ColumnName="Result_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PayedType">
+            <EntityTypeMapping TypeName="MedLabModel.PayedType">
+              <MappingFragment StoreEntitySet="PayedType">
+                <ScalarProperty Name="ID_TypePay" ColumnName="ID_TypePay" />
+                <ScalarProperty Name="NameTypePay" ColumnName="NameTypePay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResultAnalyzies">
+            <EntityTypeMapping TypeName="MedLabModel.ResultAnalyzies">
+              <MappingFragment StoreEntitySet="ResultAnalyzies">
+                <ScalarProperty Name="ID_Result" ColumnName="ID_Result" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RoleWorker">
+            <EntityTypeMapping TypeName="MedLabModel.RoleWorker">
+              <MappingFragment StoreEntitySet="RoleWorker">
+                <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+                <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StatusOrder">
+            <EntityTypeMapping TypeName="MedLabModel.StatusOrder">
+              <MappingFragment StoreEntitySet="StatusOrder">
+                <ScalarProperty Name="ID_StatusOrder" ColumnName="ID_StatusOrder" />
+                <ScalarProperty Name="NameStat" ColumnName="NameStat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TypeAnalyzies">
+            <EntityTypeMapping TypeName="MedLabModel.TypeAnalyzies">
+              <MappingFragment StoreEntitySet="TypeAnalyzies">
+                <ScalarProperty Name="ID_TypeAnalyzies" ColumnName="ID_TypeAnalyzies" />
+                <ScalarProperty Name="NameAnalyz" ColumnName="NameAnalyz" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TypeClient">
+            <EntityTypeMapping TypeName="MedLabModel.TypeClient">
+              <MappingFragment StoreEntitySet="TypeClient">
+                <ScalarProperty Name="ID_TypeClient" ColumnName="ID_TypeClient" />
+                <ScalarProperty Name="NameTypeClient" ColumnName="NameTypeClient" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Workers">
+            <EntityTypeMapping TypeName="MedLabModel.Workers">
+              <MappingFragment StoreEntitySet="Workers">
+                <ScalarProperty Name="ID_Worker" ColumnName="ID_Worker" />
+                <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+                <ScalarProperty Name="Smeni" ColumnName="Smeni" />
+                <ScalarProperty Name="LoginWorker" ColumnName="LoginWorker" />
+                <ScalarProperty Name="PasswordWorker" ColumnName="PasswordWorker" />
+                <ScalarProperty Name="FirstNameW" ColumnName="FirstNameW" />
+                <ScalarProperty Name="LastNameW" ColumnName="LastNameW" />
+                <ScalarProperty Name="PatronymicW" ColumnName="PatronymicW" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

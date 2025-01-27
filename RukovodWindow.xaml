@@ -1,0 +1,40 @@
+﻿<Window x:Class="MedLabUP.RukovodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLabUP"
+        mc:Ignorable="d"
+        Title="Руководитель" Height="800" Width="1500" Icon="iconmedlab.PNG"
+        WindowStartupLocation="CenterScreen" Background="#B1DFFF" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#8DB8C4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="18"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Button x:Name="show_otcheti" Background="#B9E1ED" Height="40" Grid.Column="1" BorderBrush="#7C9FA9" BorderThickness="1" Content="Отчёты" Foreground="Black" Click="show_otcheti_Click"/>
+            <Button x:Name="show_analyzis" Grid.Column="2" Height="40" Background="#B9E1ED" BorderBrush="#7C9FA9" BorderThickness="1" Content="Анализы" Foreground="Black" Click="show_analyzis_Click"></Button>
+            <Button x:Name="show_main" Grid.Column="3" Height="40" Background="#B9E1ED" BorderBrush="#7C9FA9" BorderThickness="1" Content="Главная" Foreground="Black" Click="show_main_Click"></Button>
+            <Button x:Name="show_staff" Grid.Column="4" Height="40" Background="#B9E1ED" BorderBrush="#7C9FA9" BorderThickness="1" Content="Сотрудники" Foreground="Black" Click="show_staff_Click"></Button>
+            <Button x:Name="exit" Grid.Column="5" Width="41" Height="40" Background="#B9E1ED" Content="×" Foreground="Black" FontSize="15" BorderBrush="#7C9FA9" BorderThickness="1" Click="exit_Click"></Button>
+            
+            
+        </Grid>
+
+        <Frame x:Name="page" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

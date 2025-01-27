@@ -1,0 +1,160 @@
+﻿<Window x:Class="MedLabUP.CreateUr"
+        xmlns:mt="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedLabUP"
+        mc:Ignorable="d"
+        Title="Создание клиента (юридического лица)" Height="800" Width="1500"  Icon="iconmedlab.PNG" Background="#B1DFFF" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="35" Background="{TemplateBinding Background}" BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Row="0" Grid.Column="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                
+            <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="1" Height="80">
+                <TextBox x:Name="company_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Наименование компании"/>
+            </Border>
+                
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="1" Height="80">
+                <TextBox x:Name="email_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Контактная почта" Margin="10,0,15,10"/>
+            </Border>
+               </Grid>
+
+
+            <Grid Grid.Row="2" Grid.Column="0"> 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="2" Grid.Column="1" Height="80">
+                <TextBox x:Name="rekviz_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Реквизиты организации" Margin="10,0,15,10"/>
+            </Border>
+            </Grid>
+
+
+
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="1" Height="80">
+                <TextBox x:Name="fam_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Фамилия" Margin="10,0,15,10"/>
+            </Border>
+
+                </Grid>
+
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="1" Height="80">
+                <TextBox x:Name="name_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Имя" Margin="10,0,15,10"/>
+            </Border>
+                </Grid>
+
+
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="2" Grid.Column="1" Height="80">
+                <TextBox x:Name="otch_tbx" Grid.Row="0" Height="80" FontSize="20" mt:HintAssist.Hint="Отчество" Margin="10,0,15,10"/>
+            </Border>
+
+               </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border x:Name="ComboBoxBorder" CornerRadius="20" Background="White" Height="60" Grid.Column="1"  Padding="10" VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+                <ComboBox x:Name="dolz_cbx"  mt:HintAssist.Hint="Должность" FontSize="20" FontFamily="Inter" Foreground="Black" Background="White" Margin="0,7,0,0" VerticalAlignment="Top" BorderThickness="0" BorderBrush="White"/>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="create_client" Content="Создать клиента" Height="60" Background="#3A79A6" VerticalAlignment="Top" FontSize="30" HorizontalAlignment="Center" Grid.Row="0" Width="400" Grid.Column="0" Margin="0,20,0,0" Foreground="White" FontFamily="Inter" Style="{StaticResource RoundedButtonStyle}" Click="create_client_Click"/>
+            <Button x:Name="exit" Content="Выход" Height="60" Background="#3A79A6" VerticalAlignment="Top" FontSize="30" HorizontalAlignment="Center" Grid.Row="0" Width="400" Grid.Column="2" Margin="0,20,0,0" Foreground="White" FontFamily="Inter" Style="{StaticResource RoundedButtonStyle}" Click="exit_Click"/>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

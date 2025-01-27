@@ -1,0 +1,617 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\MedLabUP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminclientsmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminclientsmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\resultlab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:resultlab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|C:\\Users\\User\\source\\repos\\MedLabUP\\resultlab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:resultlab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|C:\\Users\\User\\source\\repos\\MedLabUP\\payadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:payadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|C:\\Users\\User\\source\\repos\\MedLabUP\\payadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:payadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\createfiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:createfiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\editfiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:editfiz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\editfiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:editfiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminclientspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminclientspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\editur.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:editur.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\createur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:createur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\editur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:editur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\medlab.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:medlab.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukanalyzpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukanalyzpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\createfiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:createfiz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\analyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:analyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\statusanalyzpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:statusanalyzpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\statusanalyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:statusanalyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukstaffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukstaffpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukstaffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukstaffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukotchetipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukotchetipage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\rukanalyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:rukanalyzpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\labmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:labmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\labmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:labmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminorderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminorderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminorderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminorderspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminmainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminmainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminclientspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminclientspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\adminclientsmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:adminclientsmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\labwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:labwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|c:\\users\\user\\source\\repos\\medlabup\\labwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{19951139-5F34-44D0-AE45-B9A29F9BC9FD}|MedLabUP.csproj|solutionrelative:labwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 364,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 364,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PayAdmin.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\PayAdmin.xaml",
+              "RelativeDocumentMoniker": "PayAdmin.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\PayAdmin.xaml",
+              "RelativeToolTip": "PayAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T01:44:09.925Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PayAdmin.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\PayAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "PayAdmin.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\PayAdmin.xaml.cs",
+              "RelativeToolTip": "PayAdmin.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T01:45:26.332Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultLab.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\ResultLab.xaml",
+              "RelativeDocumentMoniker": "ResultLab.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\ResultLab.xaml",
+              "RelativeToolTip": "ResultLab.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T01:42:40.127Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultLab.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\ResultLab.xaml.cs",
+              "RelativeDocumentMoniker": "ResultLab.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\ResultLab.xaml.cs",
+              "RelativeToolTip": "ResultLab.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T01:45:12.114Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminClientsManagement.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsManagement.xaml.cs",
+              "RelativeDocumentMoniker": "AdminClientsManagement.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsManagement.xaml.cs",
+              "RelativeToolTip": "AdminClientsManagement.xaml.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAAANMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:27:05.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateFiz.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateFiz.xaml.cs",
+              "RelativeDocumentMoniker": "CreateFiz.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateFiz.xaml.cs",
+              "RelativeToolTip": "CreateFiz.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:04:54.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditFiz.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditFiz.xaml",
+              "RelativeDocumentMoniker": "EditFiz.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditFiz.xaml",
+              "RelativeToolTip": "EditFiz.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:13:25.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditFiz.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditFiz.xaml.cs",
+              "RelativeDocumentMoniker": "EditFiz.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditFiz.xaml.cs",
+              "RelativeToolTip": "EditFiz.xaml.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwJ0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:00:36.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminClientsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsPage.xaml",
+              "RelativeDocumentMoniker": "AdminClientsPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsPage.xaml",
+              "RelativeToolTip": "AdminClientsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:27:17.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditUr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditUr.xaml.cs",
+              "RelativeDocumentMoniker": "EditUr.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditUr.xaml.cs",
+              "RelativeToolTip": "EditUr.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T10:00:44.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateUr.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateUr.xaml",
+              "RelativeDocumentMoniker": "CreateUr.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateUr.xaml",
+              "RelativeToolTip": "CreateUr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:17:14.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditUr.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditUr.xaml",
+              "RelativeDocumentMoniker": "EditUr.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\EditUr.xaml",
+              "RelativeToolTip": "EditUr.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:13:27.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MedLab.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\MedLab.edmx",
+              "RelativeDocumentMoniker": "MedLab.edmx",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\MedLab.edmx [Diagram1]",
+              "RelativeToolTip": "MedLab.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-01-27T09:48:22.14Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RukAnalyzPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukAnalyzPage.xaml.cs",
+              "RelativeDocumentMoniker": "RukAnalyzPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukAnalyzPage.xaml.cs",
+              "RelativeToolTip": "RukAnalyzPage.xaml.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:28:54.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RukMainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukMainPage.xaml.cs",
+              "RelativeDocumentMoniker": "RukMainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukMainPage.xaml.cs",
+              "RelativeToolTip": "RukMainPage.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:28:58.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateFiz.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateFiz.xaml",
+              "RelativeDocumentMoniker": "CreateFiz.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\CreateFiz.xaml",
+              "RelativeToolTip": "CreateFiz.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:17:13.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AnalyzPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AnalyzPage.xaml",
+              "RelativeDocumentMoniker": "AnalyzPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AnalyzPage.xaml",
+              "RelativeToolTip": "AnalyzPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:16:42.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StatusAnalyzPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\StatusAnalyzPage.xaml.cs",
+              "RelativeDocumentMoniker": "StatusAnalyzPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\StatusAnalyzPage.xaml.cs",
+              "RelativeToolTip": "StatusAnalyzPage.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswIcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:13:36.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StatusAnalyzPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\StatusAnalyzPage.xaml",
+              "RelativeDocumentMoniker": "StatusAnalyzPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\StatusAnalyzPage.xaml",
+              "RelativeToolTip": "StatusAnalyzPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:13:30.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RukStaffPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukStaffPage.xaml.cs",
+              "RelativeDocumentMoniker": "RukStaffPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukStaffPage.xaml.cs",
+              "RelativeToolTip": "RukStaffPage.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwC8AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:29:17.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RukStaffPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukStaffPage.xaml",
+              "RelativeDocumentMoniker": "RukStaffPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukStaffPage.xaml",
+              "RelativeToolTip": "RukStaffPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:29:13.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RukOtchetiPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukOtchetiPage.xaml",
+              "RelativeDocumentMoniker": "RukOtchetiPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukOtchetiPage.xaml",
+              "RelativeToolTip": "RukOtchetiPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:29:11.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RukAnalyzPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukAnalyzPage.xaml",
+              "RelativeDocumentMoniker": "RukAnalyzPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukAnalyzPage.xaml",
+              "RelativeToolTip": "RukAnalyzPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:28:49.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RukMainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukMainPage.xaml",
+              "RelativeDocumentMoniker": "RukMainPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\RukMainPage.xaml",
+              "RelativeToolTip": "RukMainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:16:12.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:28:42.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LabMainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabMainPage.xaml",
+              "RelativeDocumentMoniker": "LabMainPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabMainPage.xaml",
+              "RelativeToolTip": "LabMainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:14:30.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LabMainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabMainPage.xaml.cs",
+              "RelativeDocumentMoniker": "LabMainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabMainPage.xaml.cs",
+              "RelativeToolTip": "LabMainPage.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:14:29.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdminOrdersPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminOrdersPage.xaml.cs",
+              "RelativeDocumentMoniker": "AdminOrdersPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminOrdersPage.xaml.cs",
+              "RelativeToolTip": "AdminOrdersPage.xaml.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:27:52.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdminOrdersPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminOrdersPage.xaml",
+              "RelativeDocumentMoniker": "AdminOrdersPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminOrdersPage.xaml",
+              "RelativeToolTip": "AdminOrdersPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:27:48.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AdminMainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminMainPage.xaml.cs",
+              "RelativeDocumentMoniker": "AdminMainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminMainPage.xaml.cs",
+              "RelativeToolTip": "AdminMainPage.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:27:32.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdminMainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminMainPage.xaml",
+              "RelativeDocumentMoniker": "AdminMainPage.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminMainPage.xaml",
+              "RelativeToolTip": "AdminMainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:27:28.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdminClientsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsPage.xaml.cs",
+              "RelativeDocumentMoniker": "AdminClientsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsPage.xaml.cs",
+              "RelativeToolTip": "AdminClientsPage.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:27:21.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AdminClientsManagement.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsManagement.xaml",
+              "RelativeDocumentMoniker": "AdminClientsManagement.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\AdminClientsManagement.xaml",
+              "RelativeToolTip": "AdminClientsManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:27:01.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LabWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LabWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabWindow.xaml.cs",
+              "RelativeToolTip": "LabWindow.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:17:25.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LabWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabWindow.xaml",
+              "RelativeDocumentMoniker": "LabWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\MedLabUP\\LabWindow.xaml",
+              "RelativeToolTip": "LabWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T09:17:19.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

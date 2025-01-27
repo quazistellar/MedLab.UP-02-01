@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MedLabModelContainer" CdmEntityContainer="MedLabEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="MedLabModel.Addresses">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="ID_Address" ColumnName="ID_Address" />
+          <ScalarProperty Name="NameAddress" ColumnName="NameAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Analyzis">
+      <EntityTypeMapping TypeName="MedLabModel.Analyzis">
+        <MappingFragment StoreEntitySet="Analyzis">
+          <ScalarProperty Name="ID_Analyz" ColumnName="ID_Analyz" />
+          <ScalarProperty Name="NameAnalyz" ColumnName="NameAnalyz" />
+          <ScalarProperty Name="CostAnalyz" ColumnName="CostAnalyz" />
+          <ScalarProperty Name="Ogranizhenia" ColumnName="Ogranizhenia" />
+          <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+          <ScalarProperty Name="TypeAnalyz_ID" ColumnName="TypeAnalyz_ID" />
+          <ScalarProperty Name="Obrazech_ID" ColumnName="Obrazech_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="MedLabModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="NameCompany" ColumnName="NameCompany" />
+          <ScalarProperty Name="EmailClient" ColumnName="EmailClient" />
+          <ScalarProperty Name="Dolznost_ID" ColumnName="Dolznost_ID" />
+          <ScalarProperty Name="RekvisitOrganisation" ColumnName="RekvisitOrganisation" />
+          <ScalarProperty Name="FirstNameC" ColumnName="FirstNameC" />
+          <ScalarProperty Name="LastNameC" ColumnName="LastNameC" />
+          <ScalarProperty Name="PatronymicC" ColumnName="PatronymicC" />
+          <ScalarProperty Name="Date_Born" ColumnName="Date_Born" />
+          <ScalarProperty Name="PolicyC" ColumnName="PolicyC" />
+          <ScalarProperty Name="TypeClient_ID" ColumnName="TypeClient_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dolznosti">
+      <EntityTypeMapping TypeName="MedLabModel.Dolznosti">
+        <MappingFragment StoreEntitySet="Dolznosti">
+          <ScalarProperty Name="ID_Dolznost" ColumnName="ID_Dolznost" />
+          <ScalarProperty Name="NameDolznost" ColumnName="NameDolznost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Obrazchi">
+      <EntityTypeMapping TypeName="MedLabModel.Obrazchi">
+        <MappingFragment StoreEntitySet="Obrazchi">
+          <ScalarProperty Name="ID_Obrazech" ColumnName="ID_Obrazech" />
+          <ScalarProperty Name="NameObrazech" ColumnName="NameObrazech" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="MedLabModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="StatOrder_ID" ColumnName="StatOrder_ID" />
+          <ScalarProperty Name="AddressoOrd_ID" ColumnName="AddressoOrd_ID" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="Worker_ID" ColumnName="Worker_ID" />
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Analyz_ID" ColumnName="Analyz_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payed">
+      <EntityTypeMapping TypeName="MedLabModel.Payed">
+        <MappingFragment StoreEntitySet="Payed">
+          <ScalarProperty Name="ID_Pay" ColumnName="ID_Pay" />
+          <ScalarProperty Name="DatePay" ColumnName="DatePay" />
+          <ScalarProperty Name="TypePay_ID" ColumnName="TypePay_ID" />
+          <ScalarProperty Name="Result_ID" ColumnName="Result_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayedType">
+      <EntityTypeMapping TypeName="MedLabModel.PayedType">
+        <MappingFragment StoreEntitySet="PayedType">
+          <ScalarProperty Name="ID_TypePay" ColumnName="ID_TypePay" />
+          <ScalarProperty Name="NameTypePay" ColumnName="NameTypePay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultAnalyzies">
+      <EntityTypeMapping TypeName="MedLabModel.ResultAnalyzies">
+        <MappingFragment StoreEntitySet="ResultAnalyzies">
+          <ScalarProperty Name="ID_Result" ColumnName="ID_Result" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleWorker">
+      <EntityTypeMapping TypeName="MedLabModel.RoleWorker">
+        <MappingFragment StoreEntitySet="RoleWorker">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusOrder">
+      <EntityTypeMapping TypeName="MedLabModel.StatusOrder">
+        <MappingFragment StoreEntitySet="StatusOrder">
+          <ScalarProperty Name="ID_StatusOrder" ColumnName="ID_StatusOrder" />
+          <ScalarProperty Name="NameStat" ColumnName="NameStat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeAnalyzies">
+      <EntityTypeMapping TypeName="MedLabModel.TypeAnalyzies">
+        <MappingFragment StoreEntitySet="TypeAnalyzies">
+          <ScalarProperty Name="ID_TypeAnalyzies" ColumnName="ID_TypeAnalyzies" />
+          <ScalarProperty Name="NameAnalyz" ColumnName="NameAnalyz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeClient">
+      <EntityTypeMapping TypeName="MedLabModel.TypeClient">
+        <MappingFragment StoreEntitySet="TypeClient">
+          <ScalarProperty Name="ID_TypeClient" ColumnName="ID_TypeClient" />
+          <ScalarProperty Name="NameTypeClient" ColumnName="NameTypeClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="MedLabModel.Workers">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="ID_Worker" ColumnName="ID_Worker" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Smeni" ColumnName="Smeni" />
+          <ScalarProperty Name="LoginWorker" ColumnName="LoginWorker" />
+          <ScalarProperty Name="PasswordWorker" ColumnName="PasswordWorker" />
+          <ScalarProperty Name="FirstNameW" ColumnName="FirstNameW" />
+          <ScalarProperty Name="LastNameW" ColumnName="LastNameW" />
+          <ScalarProperty Name="PatronymicW" ColumnName="PatronymicW" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

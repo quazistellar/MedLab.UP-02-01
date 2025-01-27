@@ -1,0 +1,151 @@
+﻿<Page x:Class="MedLabUP.PayAdmin"
+      xmlns:mt="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedLabUP"
+      mc:Ignorable="d" 
+       Height="800" Width="1500"  Background="#B1DFFF" 
+      Title="PayAdmin">
+
+
+    <Page.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="35" Background="{TemplateBinding Background}" BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+        <Style x:Key="RoundedComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="15"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="#CCCCCC">
+                                <ToggleButton x:Name="ToggleButton"
+                                       BorderThickness="0"
+                                       Background="Transparent"
+                                       IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                       Focusable="False"
+                                       ClickMode="Press">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <ContentPresenter Grid.Column="0" x:Name="PART_ContentPresenter" IsHitTestVisible="False" Margin="3" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                        <Path Grid.Column="1" x:Name="arrow" Margin="0,0,10,0" Fill="#888" Data="M 0 0 L 4 4 L 8 0 Z" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                </ToggleButton>
+
+                            </Border>
+                            <Popup  x:Name="PART_Popup" Placement="Bottom"  IsOpen="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" AllowsTransparency="True"  Focusable="False" PopupAnimation="Fade">
+                                <Border Background="White" BorderThickness="1" BorderBrush="#CCCCCC" >
+                                    <ScrollViewer x:Name="DropDownScrollViewer">
+                                        <ItemsPresenter KeyboardNavigation.TabNavigation="Cycle"  />
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="#888"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#999"/>
+                                <Setter TargetName="arrow" Property="Fill" Value="#333"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="1" Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="1">
+
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="0" Height="50"  Margin="15,0,15,10">
+                    <DatePicker x:Name="datapay_dpc" Grid.Row="0" Height="50" FontSize="20" mt:HintAssist.Hint="Дата оплаты" Margin="10,0,15,10"/>
+                </Border>
+
+
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="1" Height="50"  Margin="15,0,15,10">
+                    <ComboBox x:Name="type_pay_cbx" Grid.Row="1" Height="50" Padding="10" FontSize="20" mt:HintAssist.Hint="Тип оплаты" Margin="0,0,15,10" />
+                </Border>
+
+
+                <Border CornerRadius="20" Background="White" BorderBrush="White" BorderThickness="1" Grid.Row="2" Height="50"  Margin="15,0,15,10">
+                    <ComboBox x:Name="result_cbx" Grid.Row="2" Height="50" FontSize="20" mt:HintAssist.Hint="Результат" Margin="10,0,15,10"/>
+                </Border>
+
+
+
+
+
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+
+                </Grid>
+
+            </StackPanel>
+
+
+
+            <Button x:Name="create_btn" Content="Создать оплату" Click="create_btn_Click"
+             Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="2"
+             Style="{StaticResource RoundedButtonStyle}"  Height="60" FontSize="30"  Margin="20,0,15,10"/>
+
+        </Grid>
+
+        <Border BorderBrush="#0077DE" BorderThickness="2" CornerRadius="5" Grid.Row="1" Margin="15">
+            <DataGrid x:Name="staffinfo" AutoGenerateColumns="False" Grid.Row="1" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Дата оплаты" Binding="{Binding DateCreate}" Width="*" />
+                    <DataGridTextColumn Header="Тип оплаты" Binding="{Binding TypePay}" Width="*" />
+                    <DataGridTextColumn Header="Результат" Binding="{Binding Result}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Page>
