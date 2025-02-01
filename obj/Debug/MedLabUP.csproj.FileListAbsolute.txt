@@ -89,3 +89,5 @@ C:\Users\User\source\repos\MedLabUP\obj\Debug\PayAdmin.g.cs
 C:\Users\User\source\repos\MedLabUP\obj\Debug\ResultLab.g.cs
 C:\Users\User\source\repos\MedLabUP\obj\Debug\PayAdmin.baml
 C:\Users\User\source\repos\MedLabUP\obj\Debug\ResultLab.baml
+C:\Users\User\source\repos\MedLabUP\obj\Debug\EmailDialog.g.cs
+C:\Users\User\source\repos\MedLabUP\obj\Debug\EmailDialog.baml

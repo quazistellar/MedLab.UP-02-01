@@ -54,8 +54,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-        
-            <Button Content="Скачать PDF" Click="Button_Click" Height="60" Background="#3A79A6" VerticalAlignment="Top" FontSize="30" Margin="20, 0, 15, 0" Grid.Row="0" Foreground="White" FontFamily="Inter" Style="{StaticResource RoundedButtonStyle}"/>
+
+            <Button Content="Скачать PDF и отправить на почту" Click="Button_Click" Height="60" Background="#3A79A6" VerticalAlignment="Top" FontSize="30" Margin="20, 0, 15, 0" Grid.Row="0" Foreground="White" FontFamily="Inter" Style="{StaticResource RoundedButtonStyle}"/>
         </Grid>
     </Grid>
 </Page>

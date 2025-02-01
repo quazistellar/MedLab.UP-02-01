@@ -9,6 +9,8 @@ using System.Windows.Controls;
 using Spire.Doc;
 using Section = Spire.Doc.Section;
 using Paragraph = Spire.Doc.Documents.Paragraph;
+using System.Net.Mail;
+using System.Net;
 
 
 namespace MedLabUP
@@ -108,6 +110,11 @@ namespace MedLabUP
                             File.WriteAllBytes(uniquePdfFilePath, pdfBytes);
                             System.Diagnostics.Process.Start(uniquePdfFilePath);
                             File.Delete(filePath);
+
+                            var emailDialog = new MedLabUP.EmailDialog() { AttachmentPath = uniquePdfFilePath };
+                            bool? dialogResult = emailDialog.ShowDialog();
+
+                           
                         }
                     }
                 }
@@ -120,6 +127,30 @@ namespace MedLabUP
             else
             {
                 MessageBox.Show("Пожалуйста, выберите запись для создания отчета!", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+
+
+        private void SendEmailWithAttachment(string attachmentPath, string fromEmail, string password, string toEmail)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage(fromEmail, toEmail); 
+                mail.Subject = "Результаты анализа";
+                mail.Body = "Здравствуйте! \n\nУведомляем Вас о готовности анализа! В приложении вы найдете файл с результатом.\n\nС уважением,\n ООО 'МедЛаб'"; 
+                Attachment attachment = new Attachment(attachmentPath); 
+                mail.Attachments.Add(attachment); 
+                SmtpClient smtp = new SmtpClient("smtp.mail.ru", 587); 
+                smtp.EnableSsl = true;
+                smtp.Credentials = new NetworkCredential(fromEmail, password);
+
+                smtp.Send(mail); 
+                MessageBox.Show("Отчет успешно отправлен на почту!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при отправке письма: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

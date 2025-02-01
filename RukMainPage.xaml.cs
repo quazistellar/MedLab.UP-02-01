@@ -45,7 +45,9 @@ namespace MedLabUP
                                  DateEnd = result.DateEnd
                              };
 
-            analyz_dataend.ItemsSource = analyzData.ToList();
+            var sortedAnalyzData = analyzData.ToList().OrderBy(item => item.DateEnd).ToList();
+
+            analyz_dataend.ItemsSource = sortedAnalyzData;
             hello_name.Text = name + "!";
         }
     }

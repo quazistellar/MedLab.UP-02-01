@@ -31,8 +31,8 @@
             <Button x:Name="show_main" Grid.Column="3" Height="40" Background="#B9E1ED" BorderBrush="#7C9FA9" BorderThickness="1" Content="Главная" Foreground="Black" Click="show_main_Click"></Button>
             <Button x:Name="show_staff" Grid.Column="4" Height="40" Background="#B9E1ED" BorderBrush="#7C9FA9" BorderThickness="1" Content="Сотрудники" Foreground="Black" Click="show_staff_Click"></Button>
             <Button x:Name="exit" Grid.Column="5" Width="41" Height="40" Background="#B9E1ED" Content="×" Foreground="Black" FontSize="15" BorderBrush="#7C9FA9" BorderThickness="1" Click="exit_Click"></Button>
-            
-            
+
+
         </Grid>
 
         <Frame x:Name="page" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>

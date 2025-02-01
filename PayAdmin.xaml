@@ -9,7 +9,6 @@
        Height="800" Width="1500"  Background="#B1DFFF" 
       Title="PayAdmin">
 
-
     <Page.Resources>
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
             <Setter Property="Template">
@@ -22,8 +21,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-
 
         <Style x:Key="RoundedComboBoxStyle" TargetType="ComboBox">
             <Setter Property="Background" Value="White"/>
@@ -129,8 +126,6 @@
                 </Grid>
 
             </StackPanel>
-
-
 
             <Button x:Name="create_btn" Content="Создать оплату" Click="create_btn_Click"
              Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="2"

@@ -33,7 +33,6 @@ namespace MedLabUP
 
         }
 
-
         private void LoadData()
         {
             try

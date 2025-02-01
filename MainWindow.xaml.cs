@@ -26,7 +26,7 @@ namespace MedLabUP
         public MainWindow()
         {
             InitializeComponent();
-            MinHeight = 232;
+            MinHeight = 272;
             MinWidth = 400;
         }
 
@@ -75,6 +75,11 @@ namespace MedLabUP
             {
                 MessageBox.Show("Неверные данные: логин или пароль", Title="Ошибка авторизации", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
+        }
+
+        private void exit_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

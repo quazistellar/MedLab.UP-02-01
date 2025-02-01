@@ -84,9 +84,6 @@
                 </Border>
             </Grid>
 
-
-
-
             <Grid Grid.Row="0" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
@@ -128,7 +125,7 @@
             </Grid>
         </Grid>
 
-      
+
 
         <Grid Grid.Row="1">
 

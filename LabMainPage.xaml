@@ -44,12 +44,12 @@
 
         <Border BorderBrush="#0077DE" BorderThickness="2" CornerRadius="5" Grid.Row="1" Grid.Column="2" Margin="10">
             <DataGrid x:Name="analyz_dataend" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Анализ" Binding="{Binding AnalyzName}" Width="*" />
-                <DataGridTextColumn Header="Дата окончания" Binding="{Binding DateEnd}" Width="*" />
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Анализ" Binding="{Binding AnalyzName}" Width="*" />
+                    <DataGridTextColumn Header="Дата окончания" Binding="{Binding DateEnd}" Width="*" />
 
-            </DataGrid.Columns>
-        </DataGrid>
+                </DataGrid.Columns>
+            </DataGrid>
         </Border>
     </Grid>
 </Page>

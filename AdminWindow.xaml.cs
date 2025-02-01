@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,6 +21,7 @@ namespace MedLabUP
     /// </summary>
     public partial class AdminWindow : Window
     {
+        private MedLabEntities context = new MedLabEntities();
         public AdminWindow(string name)
         {
             InitializeComponent();
@@ -27,6 +29,8 @@ namespace MedLabUP
             Name = name;
             MinHeight = 800;
             MinWidth = 1500;
+
+            CheckForReadyOrders();
         }
 
         private void show_clients_Click(object sender, RoutedEventArgs e)
@@ -59,6 +63,29 @@ namespace MedLabUP
                 main.Show();
                 this.Close();
             }
+        }
+
+
+        private void CheckForReadyOrders()
+        {
+            var readyStatusId = context.StatusOrder
+                                      .FirstOrDefault(s => s.NameStat == "Готов")?.ID_StatusOrder;
+
+            if (readyStatusId.HasValue)
+            {
+                bool hasReadyOrders = context.Orders
+                                          .Any(order => order.StatOrder_ID == readyStatusId.Value);
+
+                if (hasReadyOrders)
+                {
+                    MessageBox.Show("В системе есть готовые, но не выданные заказы!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Не найден статус 'Готов' в таблице StatusOrder.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
         }
 
         private void show_pay_Click(object sender, RoutedEventArgs e)

@@ -75,7 +75,6 @@
             </Setter>
         </Style>
 
-
     </Page.Resources>
 
     <Grid>
@@ -123,8 +122,6 @@
                 <Border x:Name="ComboBoxBorder1" CornerRadius="20" Background="White" Height="60"  Margin="15,0,15,10" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Stretch" >
                     <ComboBox x:Name="type_cbx" mt:HintAssist.Hint="Тип" FontSize="20" FontFamily="Inter" Foreground="Black" Background="White" Margin="0,7,0,0" VerticalAlignment="Top" BorderThickness="0" BorderBrush="White"/>
                 </Border>
-
-
 
             </StackPanel>
 

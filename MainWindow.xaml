@@ -7,8 +7,8 @@
         xmlns:local="clr-namespace:MedLabUP"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Авторизация" Height="232" Width="400" Background="#B1DFFF"
-        WindowStartupLocation="CenterScreen" Icon="iconmedlab.png">
+        Title="Авторизация" Height="272" Width="400" Background="#B1DFFF"
+        WindowStartupLocation="CenterScreen" Icon="iconmedlab.png" ResizeMode="NoResize">
 
     <Window.Resources>
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
@@ -23,13 +23,13 @@
             </Setter>
         </Style>
 
-            <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBoxBase}" x:Key="TextBoxNoUnderline">
-                <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
-            </Style>
+        <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBoxBase}" x:Key="TextBoxNoUnderline">
+            <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
+        </Style>
 
-            <Style TargetType="PasswordBox" BasedOn="{StaticResource MaterialDesignPasswordBox}" x:Key="PasswordBoxNoUnderline">
-                <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
-            </Style>    
+        <Style TargetType="PasswordBox" BasedOn="{StaticResource MaterialDesignPasswordBox}" x:Key="PasswordBoxNoUnderline">
+            <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Transparent" />
+        </Style>
 
     </Window.Resources>
 
@@ -43,6 +43,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -63,7 +64,8 @@
             <PasswordBox x:Name="Password_tbx"  Width="303" Height="36" mt:HintAssist.Hint="Пароль"  Grid.Row="4" Background="Transparent" Padding="5,0,5,0" BorderThickness="0" Style="{StaticResource PasswordBoxNoUnderline}" />
         </Border>
 
-        <Button x:Name="Autorize_btn" Content="Войти" Click="Autorize_btn_Click"  Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="6" Style="{StaticResource RoundedButtonStyle}" Height="29" VerticalAlignment="Center" HorizontalAlignment="Center" Width="131" />
+        <Button x:Name="Autorize_btn" Content="Войти" Click="Autorize_btn_Click"  Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="6" Style="{StaticResource RoundedButtonStyle}" Height="29" VerticalAlignment="Center" Margin="134,0,134,0" />
+        <Button x:Name="exit_btn" Content="Выход" Click="exit_btn_Click"  Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="7" Style="{StaticResource RoundedButtonStyle}" Margin="144,5,144,0" />
 
     </Grid>
 </Window>

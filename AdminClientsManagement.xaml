@@ -22,7 +22,6 @@
             </Setter>
         </Style>
 
-        
 
         <Style x:Key="RoundedComboBoxStyle" TargetType="ComboBox">
             <Setter Property="Background" Value="White"/>
@@ -75,7 +74,6 @@
             </Setter>
         </Style>
 
-
     </Page.Resources>
 
     <Grid>
@@ -104,7 +102,7 @@
 
                 <Button x:Name="edit_ur_btn" Content="Изменить юр лицо" Click="edit_ur_btn_Click"
            Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="1"
-           Style="{StaticResource RoundedButtonStyle}"  Height="60" FontSize="30"  Margin="20,0,15,90"/>        
+           Style="{StaticResource RoundedButtonStyle}"  Height="60" FontSize="30"  Margin="20,0,15,90"/>
 
                 <Button x:Name="create_fiz_btn" Content="Добавить физ лицо" Click="create_fiz_btn_Click"
             Background="#3A79A6" Foreground="White" FontFamily="Inter" Grid.Row="1"
@@ -134,6 +132,4 @@
             </DataGrid>
         </Border>
     </Grid>
-
-    
 </Page>

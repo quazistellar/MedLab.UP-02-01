@@ -22,8 +22,6 @@
             </Setter>
         </Style>
 
-
-
         <Style x:Key="RoundedComboBoxStyle" TargetType="ComboBox">
             <Setter Property="Background" Value="White"/>
             <Setter Property="Padding" Value="10"/>
@@ -97,7 +95,6 @@
 
             <StackPanel Margin="1">
 
-                
 
                 <Border x:Name="ComboBoxBorder" CornerRadius="20" Background="White" Height="60"  Margin="15,0,15,10" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Stretch" >
                     <ComboBox x:Name="analyz_cbx"  mt:HintAssist.Hint="Анализ" FontSize="20" FontFamily="Inter" Foreground="Black" Background="White" Margin="0,7,0,0" VerticalAlignment="Top" BorderThickness="0" BorderBrush="White"/>
@@ -119,7 +116,7 @@
                 <Border x:Name="ComboBoxBorder4" CornerRadius="20" Background="White" Height="60"  Margin="15,0,15,10" Padding="10" VerticalAlignment="Top" HorizontalAlignment="Stretch" >
                     <ComboBox x:Name="laborant_cbx" mt:HintAssist.Hint="Лаборант" FontSize="20" FontFamily="Inter" Foreground="Black" Background="White" Margin="0,7,0,0" VerticalAlignment="Top" BorderThickness="0" BorderBrush="White"/>
                 </Border>
-                
+
             </StackPanel>
 
             <Button x:Name="create_btn" Content="Добавить заказ" Click="create_btn_Click"

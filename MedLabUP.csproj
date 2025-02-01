@@ -143,6 +143,9 @@
     <Compile Include="EditUr.xaml.cs">
       <DependentUpon>EditUr.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EmailDialog.xaml.cs">
+      <DependentUpon>EmailDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LabMainPage.xaml.cs">
       <DependentUpon>LabMainPage.xaml</DependentUpon>
     </Compile>
@@ -255,6 +258,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditUr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmailDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

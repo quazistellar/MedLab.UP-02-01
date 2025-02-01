@@ -45,17 +45,14 @@ namespace MedLabUP
             List<Workers> labsList = context.Workers
                                                    .Where(worker => worker.Role_ID == 2)
                                                    .ToList();
-
             laborant_cbx.ItemsSource = labsList;
             laborant_cbx.DisplayMemberPath = "LastNameW";
             laborant_cbx.SelectedValuePath = "ID_Worker";
-
 
             var statusList = context.StatusOrder.ToList();
             status_cbx.ItemsSource = statusList;
             status_cbx.DisplayMemberPath = "NameStat";
             status_cbx.SelectedValuePath = "ID_StatusOrder";
-
 
         }
 
